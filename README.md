@@ -6,4 +6,7 @@
 6."git status" to watch change(s)            
 7."git add" + file(s)/.(means "all")                 
 8."git commit" to commit change(s) to local repo                  
-9."git push" to sync from local to Github, include all branch                      
+9."git push" to sync from local to Github, include all branch              
+
+
+* enter more than 2 space，Github will auto linefeed
