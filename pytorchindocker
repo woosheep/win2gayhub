@@ -3,3 +3,8 @@
 3.doker ps -a #check ID，find the newest 
 4.docker commit ID(top 3 is OK) pytorch（new image name）
 5.docker run  -v $PWD/src:/usr/src  -w /usr/src pytorch python helloworld.py #-v指示本地路径映射，可用PWD命令查看当前路径，-w变成容器中的当前路径
+
+ 
+# 其它用法
+docker ps -a -q #查找所有容器ID，+"$"可作为参数传给其它命令
+docker kill/rm $(docker ps -a -q) #中止/删除容器，须中止再删除
